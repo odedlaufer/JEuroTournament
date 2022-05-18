@@ -1,0 +1,665 @@
+//= ===============================================================================
+
+// addTeam tId, tName, represents, fansCount
+
+addTeam	 t001	team1	POLAND			25000
+
+addPlayer	pPO01	Wojciech Szcz�sny	22		POLAND		01	GK UN	1589
+addPlayer	pPO02	Sebastian Boenisch	25		POLAND		02	RB UN	2566
+addPlayer	pPO03	Grzegorz Wojtkowiak	28		POLAND		03	DT LB	3100
+addPlayer	pPO04	Marcin Kaminski		20		POLAND		04	DT UN	2956
+addPlayer	pPO05	Damien Perquis		28		POLAND		15	RB DT	6600
+addPlayer	pPO06	Eugen Polanski		26		POLAND		07	RB UN	5500
+addPlayer	pPO07	Ludovic Obraniak	27		POLAND		10	WR DE	5455
+addPlayer	pPO08	Rafal Murawski		30		POLAND		11	WR UN	3600
+addPlayer	pPO09	Pawel Brożek		29		POLAND		23	WR LT	5688
+addPlayer	pPO10	Artur Sobiech		22		POLAND		17	RT WR	4236 
+addPlayer	pPO11	Robert Lewandowski	23		POLAND		09	WR RT	6250
+
+// addPlayerToTeam String pId, int pNum,String tId
+
+addPlayerToTeam		pPO01		01		t001		
+addPlayerToTeam		pPO02		02		t001
+addPlayerToTeam		pPO03		03		t001
+addPlayerToTeam		pPO04		04		t001
+addPlayerToTeam		pPO05		15		t001
+addPlayerToTeam		pPO06		07		t001
+addPlayerToTeam		pPO07		10		t001
+addPlayerToTeam		pPO08		11		t001
+addPlayerToTeam		pPO09		23		t001
+addPlayerToTeam		pPO10		17		t001
+addPlayerToTeam		pPO11		09		t001
+
+// addNewCoachToTeam tId,	pId, 	pFullName, 		age	, nation, 	role, 		seniority
+addCoachToTeam 	t001	coPOL01 	Franciszek Smuda 	55		POLAND	TECHNICAL	10
+addCoachToTeam 	t001	coPOL01 	Franciszek Smuda 	55		POLAND	FITNESS		3
+addCoachToTeam 	t001	coPOL02 	Fred Jaum 			45		POLAND	TECHNICAL		4
+addCoachToTeam 	t001	coPOL03 	Samual Clay 		60		POLAND	FITNESS		4
+// Faild
+addCoachToTeam 	t001	coPOL01 	Franciszek Smuda 	55		POLAND	TECHNICAL	10
+//= ===============================================================================
+
+
+addTeam	 t002	team2	GREECE			26500
+
+addPlayer	pGR01	Hugo Lloris			25		GREECE		01	GK UN	3366
+addPlayer	pGR02	Mathieu Debuchy		26		GREECE		02	RB LB	1200
+addPlayer	pGR03	Patrice Evra		31		GREECE		03	DT WR	5120
+addPlayer	pGR04	Philippe Mexes		30		GREECE		05	DT LB	4252
+addPlayer	pGR05	Laurent Koscielny	26		GREECE		21	RB DT	3006	
+addPlayer	pGR06	Yohan Cabaye		26		GREECE		06	WR RB	4500
+addPlayer	pGR07	Samir Nasri			25		GREECE		11	WR DT	5700
+addPlayer	pGR08	Alou Diarra			31		GREECE		18	LT DT	3900
+addPlayer	pGR09	Karim Benzema		24		GREECE		10	WR RT	6890
+addPlayer	pGR10	Olivier Giroud		25		GREECE		09	RT WR	6085
+addPlayer	pGR11	Adil Rami			26		GREECE		04	WR RT	5632
+
+// addPlayerToTeam String pId, int pNum,String tId
+addPlayerToTeam		pGR01		01		t002
+addPlayerToTeam		pGR02		02		t002
+addPlayerToTeam		pGR03		03		t002
+addPlayerToTeam		pGR04		05		t002
+addPlayerToTeam		pGR05		21		t002
+addPlayerToTeam		pGR06		06		t002
+addPlayerToTeam		pGR07		11		t002
+addPlayerToTeam		pGR08		18		t002
+addPlayerToTeam		pGR09		10		t002
+addPlayerToTeam		pGR10		09		t002
+addPlayerToTeam		pGR11		04		t002
+// failed it is a player of other team
+addPlayerToTeam		pPO11		09		t002
+
+// addNewCoachToTeam tId,	pId, 	pFullName, 		age	, nation, 	role, 		seniority
+
+addCoachToTeam 	t002	coGR01 	Paul Brown  	41		GREECE	TECHNICAL	4
+addCoachToTeam 	t002	coGR03 	Raul Kow 		33		GREECE	FITNESS		5
+addCoachToTeam 	t002	coGR04 	Nick Skorich 	42		GREECE	TECHNICAL	3
+addCoachToTeam 	t002	coGR01 	Paul Brown  	41		GREECE	FITNESS	3
+
+
+//= ===============================================================================
+
+
+addTeam	 t004	team4	CZECHREPUBLIC	54100
+
+addPlayer 	pCZ01	Petr Cech			30		CZECHREPUBLIC	01		GK UN	2600
+addPlayer 	pCZ02	Jan Lastuvka		30		CZECHREPUBLIC	16		RB DT	3240
+addPlayer 	pCZ03	Michal Kadlec		27 		CZECHREPUBLIC	03		DT DE	5400
+addPlayer 	pCZ04	Marek Suchy			24		CZECHREPUBLIC	22		DT UN	1400
+addPlayer 	pCZ05	Roman Hubnik		28		CZECHREPUBLIC	05		DT DE	3500
+addPlayer 	pCZ06	Tomas Sivok			28		CZECHREPUBLIC	06		RB DT	6800
+addPlayer 	pCZ07	Vaclav Pilar		23		CZECHREPUBLIC	14		RB CB	2545
+addPlayer 	pCZ08	Tomas Hubschman		30		CZECHREPUBLIC	17		WR DT	2515
+addPlayer 	pCZ09	Tomas Necid			22		CZECHREPUBLIC	07		WR DE	2585
+addPlayer 	pCZ10	Milan Baros			30		CZECHREPUBLIC	15		WR UN	5500
+addPlayer 	pCZ11	Tomas Pekhart		23		CZECHREPUBLIC	20		WR UN	6520
+
+// addPlayerToTeam String pId, int pNum,String tId
+addPlayerToTeam		pCZ01		01		t004	
+addPlayerToTeam		pCZ02		16		t004
+addPlayerToTeam		pCZ03		03		t004
+addPlayerToTeam		pCZ04		22		t004
+addPlayerToTeam		pCZ05		05		t004
+addPlayerToTeam		pCZ06		06		t004
+addPlayerToTeam		pCZ07		14		t004
+addPlayerToTeam		pCZ08		17		t004
+addPlayerToTeam		pCZ09		07		t004
+addPlayerToTeam		pCZ10		15		t004
+addPlayerToTeam		pCZ11		20		t004
+
+// addNewCoachToTeam tId,	pId, 	pFullName, 		age	, nation, 	role, 		seniority
+
+addCoachToTeam 	t004	coCZ01 	Romak Hub  	41		CZECHREPUBLIC	TECHNICAL	16
+addCoachToTeam 	t004	coCZ01 	Romak Hub  	41		CZECHREPUBLIC	FITNESS		6
+
+addCoachToTeam 	t004	coCZ02 	Mill Baro 	39		CZECHREPUBLIC	TECHNICAL	4
+addCoachToTeam 	t004	coCZ02 	Mill Baro 	39		CZECHREPUBLIC	FITNESS		6
+
+
+addCoachToTeam 	t004	coCZ03 	Tom Pek 	52		CZECHREPUBLIC	TECHNICAL	4
+addCoachToTeam 	t004	coCZ03 	Tom Pek 	52		CZECHREPUBLIC	FITNESS		6
+
+addCoachToTeam 	t004	coCZ04 	Mich Kad	46		CZECHREPUBLIC	TECHNICAL	2
+
+//= ===============================================================================
+
+
+addTeam	 t012	team12		CROATIA		14520
+
+addPlayer 	pHR01	Stipe Pletikosa		33		CROATIA		01		GK UN	2500
+addPlayer 	pHR02	Danijel Pranjic		30		CROATIA		06		RB DT	2500
+addPlayer 	pHR03	Ivan Strinic		25		CROATIA		02		DT DE	3800	
+addPlayer 	pHR04	Josip Simunic		34		CROATIA		03		DT UN	2500
+addPlayer 	pHR05	Jurica Buljat		25		CROATIA		04		DT DE	3100
+addPlayer	pHR06	Ognjen Vukojevic	28		CROATIA		08		RB DT	4500
+addPlayer	pHR07	Luka Modric			26		CROATIA		10		RB CB	4300
+addPlayer 	pHR08	Milan Badelj		24		CROATIA		14		RB DT	5800
+addPlayer 	pHR09	Nikica Jelavic		26		CROATIA		09		WR DT	6960
+addPlayer 	pHR10	Mario Mandzukic		26		CROATIA		17		WR DE	6500
+addPlayer 	pHR11	Eduardo Eduardo 	29		CROATIA		22		WR UN	7100
+// will fail
+addPlayer 	pHR01	Stipe Pletikosa		33		CROATIA		01		GK UN	2500
+
+// addPlayerToTeam String pId, int pNum,String tId
+addPlayerToTeam		pHR01		01		t012
+addPlayerToTeam		pHR02		06		t012
+addPlayerToTeam		pHR03		02		t012
+addPlayerToTeam		pHR04		03		t012
+addPlayerToTeam		pHR05		04		t012
+addPlayerToTeam		pHR06		08		t012
+addPlayerToTeam		pHR07		10		t012
+addPlayerToTeam		pHR08		14		t012
+addPlayerToTeam		pHR09		09		t012
+addPlayerToTeam		pHR10		17		t012
+addPlayerToTeam		pHR11		22		t012
+// failed already exist 
+addPlayerToTeam		pHR01		01		t012
+// failed ,player does not exist
+addPlayerToTeam		pPO11		08		t001
+
+
+addCoachToTeam 	t012	coHR01 	Nikica Jelavic	 	39		CROATIA	TECHNICAL	4
+addCoachToTeam 	t012	coHR01 	Nikica Jelavic	 	39		CROATIA	FITNESS		3
+
+
+addCoachToTeam 	t012	coHR02 	Edua Eduar		52		CROATIA	TECHNICAL	5
+addCoachToTeam 	t012	coHR02 	Edua Eduar		52		CROATIA	FITNESS		6
+
+addCoachToTeam 	t012	coHR03 	Luka Modric			46		CROATIA	TECHNICAL	7
+addCoachToTeam 	t012	coHR04 	Nik Jela			44		CROATIA	TECHNICAL	4
+addCoachToTeam 	t012	coHR05 	Ivar Strin			47		CROATIA	FITNESS 	3
+
+
+//= ===============================================================================
+
+
+addTeam	 t013	team13	UKRAINE			14588
+
+addPlayer 	pUK01	Maxym Koval			19		UKRAINE		01	GK UN	1598
+addPlayer	pUK02	Yevhen Selin		24		UKRAINE		02	RB DT	5478
+addPlayer	pUK03	Yevhen Khacheridi	24		UKRAINE		03	DT UN	5654
+addPlayer	pUK04	Yaroslav Rakitskiy	22		UKRAINE		20	UN DT	2545
+addPlayer	pUK05	Bohdan Butko		21		UKRAINE		21	DT UN	5463
+addPlayer	pUK06	Anatoliy Tymoshchuk	33		UKRAINE		04	RB DT	1500
+addPlayer	pUK07	Denys Garmash		22		UKRAINE		06	RB UN	2544
+addPlayer	pUK08	Andriy Yarmolenko	22		UKRAINE		11	WR DT	3225	
+addPlayer	pUK09	Andriy Voronin		33		UKRAINE		10	WR DE	4222
+addPlayer	pUK10	Andriy Shevchenko	35		UKRAINE		07	WR DT	6595
+addPlayer	pUK11	Marko Devi			28		UKRAINE		22	WR UN	5587
+
+// addPlayerToTeam String pId, int pNum,String tId
+addPlayerToTeam		pUK01		01		t013
+addPlayerToTeam		pUK02		02		t013
+addPlayerToTeam		pUK03		03		t013
+addPlayerToTeam		pUK04		20		t013
+addPlayerToTeam		pUK05		21		t013
+addPlayerToTeam		pUK06		04		t013
+addPlayerToTeam		pUK07		06		t013
+addPlayerToTeam		pUK08		11		t013
+addPlayerToTeam		pUK09		10		t013
+addPlayerToTeam		pUK10		07		t013
+addPlayerToTeam		pUK11		22		t013
+
+
+addCoachToTeam 	t013	coUK01 	Yevh Sel	 	49		UKRAINE		TECHNICAL	4
+addCoachToTeam 	t013	coUK01 	Yevh Sel	 	49		UKRAINE		FITNESS		13
+
+
+addCoachToTeam 	t013	coUK02 	Anato Tymosh		62		UKRAINE		TECHNICAL	15
+addCoachToTeam 	t013	coUK02 	Anato Tymosh 		62		UKRAINE		FITNESS		10
+
+addCoachToTeam 	t013	coUK03 	Mark Dev			56		UKRAINE		TECHNICAL	8
+addCoachToTeam 	t013	coUK04 	Max Kova			54		UKRAINE		FITNESS		2
+addCoachToTeam 	t013	coUK05 	Bohd Buto			57		UKRAINE		FITNESS 	3
+
+//= ===============================================================================
+
+
+addTeam	 t015	team15	FRANCE			64000
+
+addPlayer	pFR01	Hugo Lloris			25		FRANCE		01	GK UN	3566
+addPlayer	pFR02	Mathieu Debuchy		26		FRANCE		02	RB LB	6800
+addPlayer	pFR03	Patrice Evra		31		FRANCE		03	DT LB	5500
+addPlayer	pFR04	Philippe Mexes		30		FRANCE		05	DT RB	4522
+addPlayer	pFR05	Laurent Koscielny	26		FRANCE		21	RB DT	3566	
+addPlayer	pFR06	Yohan Cabaye		26		FRANCE		06	WR RB	6500
+addPlayer	pFR07	Samir Nasri			25		FRANCE		11	WR DT	5800
+addPlayer	pFR08	Alou Diarra			31		FRANCE		18	LT WR	6900
+addPlayer	pFR09	Karim Benzema		24		FRANCE		10	WR RT	6890
+addPlayer	pFR10	Olivier Giroud		25		FRANCE		09	RT WR	6785
+addPlayer	pFR11	Adil Rami			26		FRANCE		04	WR RT	5852
+
+// addPlayerToTeam String pId, int pNum,String tId
+addPlayerToTeam		pFR01	01	t015
+addPlayerToTeam		pFR02	02	t015
+addPlayerToTeam		pFR03	03	t015
+addPlayerToTeam		pFR04	05	t015
+addPlayerToTeam		pFR05	21	t015	
+addPlayerToTeam		pFR06	06	t015
+addPlayerToTeam		pFR07	11	t015
+addPlayerToTeam		pFR08	18	t015
+addPlayerToTeam		pFR09	10	t015
+addPlayerToTeam		pFR10	09	t015
+addPlayerToTeam		pFR11	04	t015
+
+addCoachToTeam 	t015	coFR01 	Huge Llor		66		FRANCE		TECHNICAL	8
+addCoachToTeam 	t015	coFR02 	Alwaz Diar		34		FRANCE		FITNESS		2
+addCoachToTeam 	t015	coFR03 	Adi Rom			57		FRANCE		FITNESS 	3
+
+//= ===============================================================================
+
+addTeam	 t003	team3	RUSSIA			32100
+
+addPlayer	pRU01	Igor Akinfeev			25		RUSSIA		01	GK UN	2366
+addPlayer	pRU02	Anton Shunin			26		RUSSIA		13	RB LB	6500
+addPlayer	pRU03	Aleksandr Anyukov		31		RUSSIA		15	DT LB	6600
+addPlayer	pRU04	Vyacheslav Malafeev		30		RUSSIA		05	DT RB	5522
+addPlayer	pRU05	Roman Sharonov			26		RUSSIA		21	RB DT	4566	
+addPlayer	pRU06	Sergei Ignashevich		26		RUSSIA		06	WR RB	3500
+addPlayer	pRU07	Yuri Zhirkov			25		RUSSIA		11	WR DT	2800
+addPlayer	pRU08	Aleksei Berezutski		31		RUSSIA		18	LT WR	6900
+addPlayer	pRU09	Vladimir Granat			24		RUSSIA		10	WR RT	2390
+addPlayer	pRU10	Kirill Nababkin			25		RUSSIA		09	RT WR	1385
+addPlayer	pRU11	Denis Glushakov			26		RUSSIA		04	WR RT	5352
+
+// addPlayerToTeam String pId, int pNum,String tId
+
+addPlayerToTeam		pRU01	01	t003
+addPlayerToTeam		pRU02	13	t003
+addPlayerToTeam		pRU03	15	t003
+addPlayerToTeam		pRU04	05	t003
+addPlayerToTeam		pRU05	21	t003	
+addPlayerToTeam		pRU06	06	t003
+addPlayerToTeam		pRU07	11	t003
+addPlayerToTeam		pRU08	18	t003
+addPlayerToTeam		pRU09	10	t003
+addPlayerToTeam		pRU10	09	t003
+addPlayerToTeam		pRU11	04	t003
+
+addCoachToTeam 	t003	coRU01 	Aleks Berezut		56		RUSSIA		TECHNICAL	18
+addCoachToTeam 	t003	coRU02 	Kirill Nababk		54		RUSSIA		FITNESS		22
+addCoachToTeam 	t003	coRU03 	Dan Glushak			47		RUSSIA		TECHNICAL 	13
+
+//= ===============================================================================
+
+addTeam	 t005	team5	NETHERLANDS		35000
+
+addPlayer	pNE01	Maarten Stekelenburg	25		NETHERLANDS		01	GK UN	3436
+addPlayer	pNE02	Michel Vorm				26		NETHERLANDS		13	RB LB	2340
+addPlayer	pNE03	Tim Krul				31		NETHERLANDS		15	DT LB	2320
+addPlayer	pNE04	Gregory vanderWiel		30		NETHERLANDS		05	DT RB	232
+addPlayer	pNE05	John Heitinga			26		NETHERLANDS		21	RB DT	4236	
+addPlayer	pNE06	Joris Mathijsen			26		NETHERLANDS		06	WR RB	3230
+addPlayer	pNE07	Ron Vlaar				25		NETHERLANDS		11	WR DT	280
+addPlayer	pNE08	Jetro Willems			31		NETHERLANDS		18	LT WR	600
+addPlayer	pNE09	Khalid Boulahrouz		24		NETHERLANDS		10	WR RT	290
+addPlayer	pNE10	Stijn Schaars			25		NETHERLANDS		09	RT WR	135
+addPlayer	pNE11	Kevin Strootman			26		NETHERLANDS		04	WR RT	532
+
+
+addPlayerToTeam		pNE01	01 	t005
+addPlayerToTeam		pNE02	13	t005
+addPlayerToTeam		pNE03	15	t005
+addPlayerToTeam		pNE04	05	t005
+addPlayerToTeam		pNE05	21	t005	
+addPlayerToTeam		pNE06	06	t005
+addPlayerToTeam		pNE07	11	t005
+addPlayerToTeam		pNE08	18	t005
+addPlayerToTeam		pNE09	10	t005
+addPlayerToTeam		pNE10	09	t005
+addPlayerToTeam		pNE11	04	t005
+
+addCoachToTeam 	t005	coNE01 	Alek Berez		46		NETHERLANDS		FITNESS		1
+addCoachToTeam 	t005	coNE02 	Jet Will		44		NETHERLANDS		FITNESS		3
+addCoachToTeam 	t005	coNE03 	Khal Boulahr	57		NETHERLANDS		TECHNICAL 	2
+
+//= ===============================================================================
+
+addTeam	 t006	team6	DENMARK			27450
+
+addPlayer	pDE01	Stephan Andersen		25		DENMARK		01	GK UN	236
+addPlayer	pDE02	Anders Lindegaard		36		DENMARK		13	RB LB	2340
+addPlayer	pDE03	Kasper Schmeichel		21		DENMARK		15	DT LB	2320
+addPlayer	pDE04	Simon Kj�r				20		DENMARK		05	DT RB	2320
+addPlayer	pDE05	Daniel Agger			26		DENMARK		21	RB DT	236	
+addPlayer	pDE06	Simon Poulsen			26		DENMARK		06	WR RB	3230
+addPlayer	pDE07	Ron Vlaar				25		DENMARK		11	WR DT	2801
+addPlayer	pDE08	Andreas Bjelland		21		DENMARK		18	LT WR	6002
+addPlayer	pDE09	Jores Okore				24		DENMARK		10	WR RT	903
+addPlayer	pDE10	Daniel Wass				25		DENMARK		09	RT WR	1352
+addPlayer	pDE11	Christian Poulsen		26		DENMARK		04	WR RT	5321
+
+
+addPlayerToTeam		pDE01	01 	t006
+addPlayerToTeam		pDE02	13	t006
+addPlayerToTeam		pDE03	15	t006
+addPlayerToTeam		pDE04	05	t006
+addPlayerToTeam		pDE05	21	t006	
+addPlayerToTeam		pDE06	06	t006
+addPlayerToTeam		pDE07	11	t006
+addPlayerToTeam		pDE08	18	t006
+addPlayerToTeam		pDE09	10	t006
+addPlayerToTeam		pDE10	09	t006
+addPlayerToTeam		pDE11	04	t006
+
+addCoachToTeam 	t006	coDE01 	Andreas Bjelland		46		DENMARK		TECHNICAL	12
+addCoachToTeam 	t006	coDE02 	Christian Poulsen		44		DENMARK		FITNESS		13
+addCoachToTeam 	t006	coDE03 	Simon Poulsen			57		DENMARK		TECHNICAL 	12
+
+//= ===============================================================================
+addTeam	 t007	team7	GERMANY			50040
+
+addPlayer	pGY01	Manuel Neuer		25		GERMANY		01	GK UN	2316
+addPlayer	pGY02	Tim Wiese			36		GERMANY		13	RB LB	1340
+addPlayer	pGY03	Ron-Robert Zieler	21		GERMANY		15	DT LB	1320
+addPlayer	pGY04	Marcel Schmelzer	20		GERMANY		05	DT RB	1320
+addPlayer	pGY05	Benedikt H�wedes	26		GERMANY		21	RB DT	2236	
+addPlayer	pGY06	Holger Badstuber	26		GERMANY		06	WR RB	1230
+addPlayer	pGY07	Per Mertesacker		25		GERMANY		11	WR DT	1801
+addPlayer	pGY08	Philipp Lahm		21		GERMANY		18	LT WR	2002
+addPlayer	pGY09	Aami Ahedira		24		GERMANY		10	WR RT	2203
+addPlayer	pGY10	Mesut �zil			25		GERMANY		09	RT WR	1253
+addPlayer	pGY11	Lars Bender			26		GERMANY		04	WR RT	532
+
+
+addPlayerToTeam		pGY01	01 	t007
+addPlayerToTeam		pGY02	13	t007
+addPlayerToTeam		pGY03	15	t007
+addPlayerToTeam		pGY04	05	t007
+addPlayerToTeam		pGY05	21	t007	
+addPlayerToTeam		pGY06	06	t007
+addPlayerToTeam		pGY07	11	t007
+addPlayerToTeam		pGY08	18	t007
+addPlayerToTeam		pGY09	10	t007
+addPlayerToTeam		pGY10	09	t007
+addPlayerToTeam		pGY11	04	t007
+
+addCoachToTeam 	t007	coGY01 	Mane Neu		52		GERMANY		TECHNICAL	4
+addCoachToTeam 	t007	coGY02 	Lary Bendr		43		GERMANY		FITNESS		6
+addCoachToTeam 	t007	coGY03 	Peter Mert		52		GERMANY		FITNESS 	8
+
+//= ===============================================================================
+addTeam	 t008	team8	PORTUGAL		48700
+
+addPlayer	pPOR01	Rui Patr�cio		25		PORTUGAL		01	GK UN	1316
+addPlayer	pPOR02	Bruno Alves			36		PORTUGAL		13	RB LB	2340
+addPlayer	pPOR03	F�bio Coentr�o		21		PORTUGAL		15	DT LB	3340
+addPlayer	pPOR04	Ricardo Costa		20		PORTUGAL		05	DT RB	1340
+addPlayer	pPOR05	Miguel Lopes		26		PORTUGAL		21	RB DT	2236	
+addPlayer	pPOR06	Jo�o Pereira		26		PORTUGAL		06	WR RB	2303
+addPlayer	pPOR07	Jo�o Moutinho		25		PORTUGAL		11	WR DT	1832
+addPlayer	pPOR08	Ricardo Quaresma	21		PORTUGAL		18	LT WR	2012
+addPlayer	pPOR09	Sami Khedira		24		PORTUGAL		10	WR RT	1203
+addPlayer	pPOR10	Cristiano Ronaldo	25		PORTUGAL		09	RT WR	3153
+addPlayer	pPOR11	H�lder Postiga		26		PORTUGAL		04	WR RT	3332
+
+
+addPlayerToTeam		pPOR01	01 	t008
+addPlayerToTeam		pPOR02	13	t008
+addPlayerToTeam		pPOR03	15	t008
+addPlayerToTeam		pPOR04	05	t008
+addPlayerToTeam		pPOR05	21	t008	
+addPlayerToTeam		pPOR06	06	t008
+addPlayerToTeam		pPOR07	11	t008
+addPlayerToTeam		pPOR08	18	t008
+addPlayerToTeam		pPOR09	10	t008
+addPlayerToTeam		pPOR10	09	t008
+addPlayerToTeam		pPOR11	04	t008
+
+
+addCoachToTeam 	t008	coPOR01 	Crist Ron		32		PORTUGAL		TECHNICAL	12
+addCoachToTeam 	t008	coPOR02 	Sam Khed		33		PORTUGAL		TECHNICAL	6
+addCoachToTeam 	t008	coPOR03 	Ricardo Cost	42		PORTUGAL		FITNESS 	11
+
+//= ===============================================================================
+
+addTeam	 t009	team9	SPAIN			25400
+
+addPlayer	pSPN01	Iker Casillas		25		SPAIN		01	GK UN	1316
+addPlayer	pSPN02	V�ctor Vald�s		36		SPAIN		13	RB LB	5340
+addPlayer	pSPN03	Ra�l Albiol			21		SPAIN		15	DT LB	5340
+addPlayer	pSPN04	Pepe Reina			20		SPAIN		05	DT RB	5340
+addPlayer	pSPN05	Gerard Piqu�		26		SPAIN		21	RB DT	5236	
+addPlayer	pSPN06	Andr�s Iniesta		26		SPAIN		06	WR RB	5303
+addPlayer	pSPN07	Pedro Rodr�gue		25		SPAIN		11	WR DT	5832
+addPlayer	pSPN08	Ricardo Quaresma	21		SPAIN		18	LT WR	5012
+addPlayer	pSPN09	Fernando Llorente	24		SPAIN		10	WR RT	5203
+addPlayer	pSPN10	David Silva			25		SPAIN		09	RT WR	5153
+addPlayer	pSPN11	Cesc F�bregas		26		SPAIN		04	WR RT	5332
+
+addPlayerToTeam		pSPN01	01 	t009
+addPlayerToTeam		pSPN02	13	t009
+addPlayerToTeam		pSPN03	15	t009
+addPlayerToTeam		pSPN04	05	t009
+addPlayerToTeam		pSPN05	21	t009	
+addPlayerToTeam		pSPN06	06	t009
+addPlayerToTeam		pSPN07	11	t009
+addPlayerToTeam		pSPN08	18	t009
+addPlayerToTeam		pSPN09	10	t009
+addPlayerToTeam		pSPN10	09	t009
+addPlayerToTeam		pSPN11	04	t009
+
+
+
+addCoachToTeam 	t009	coSPN01 	Ric Quare		52		SPAIN		TECHNICAL	21
+addCoachToTeam 	t009	coSPN02 	Dov Silma		53		SPAIN		TECHNICAL	16
+addCoachToTeam 	t009	coSPN03 	Fernd Llore		42		SPAIN		FITNESS 	11
+addCoachToTeam 	t009	coSPN04 	Rami Albi		41		SPAIN		FITNESS 	1
+
+
+//= ===============================================================================
+addTeam	 t010	team10	ITALY			34200
+
+addPlayer	pITY01		Gianluigi Buffon		25		ITALY		01	GK UN	2316
+addPlayer	pITY02		Angelo Ogbonna			36		ITALY		13	RB LB	3340
+addPlayer	pITY03		Andrea Barzagli			21		ITALY		15	DT LB	4340
+addPlayer	pITY04		Leonardo Bonucci		20		ITALY		05	DT RB	5740
+addPlayer	pITY05		Giorgio Chiellini		26		ITALY		21	RB DT	6736	
+addPlayer	pITY06		Claudio Marchisio		26		ITALY		06	WR RB	2303
+addPlayer	pITY07		Riccardo Montoliv		25		ITALY		11	WR DT	2832
+addPlayer	pITY08		Mario Balotelli			21		ITALY		18	LT WR	3012
+addPlayer	pITY09		Antonio Cassano			24		ITALY		10	WR RT	4203
+addPlayer	pITY10		Emanuele Giaccherini	25		ITALY		09	RT WR	2532
+addPlayer	pITY11		Federico Balzaretti		26		ITALY		04	WR RT	3321
+
+addPlayerToTeam		pITY01	01 	t010
+addPlayerToTeam		pITY02	13	t010
+addPlayerToTeam		pITY03	15	t010
+addPlayerToTeam		pITY04	05	t010
+addPlayerToTeam		pITY05	21	t010	
+addPlayerToTeam		pITY06	06	t010
+addPlayerToTeam		pITY07	11	t010
+addPlayerToTeam		pITY08	18	t010
+addPlayerToTeam		pITY09	10	t010
+addPlayerToTeam		pITY10	09	t010
+addPlayerToTeam		pITY11	04	t010
+
+addCoachToTeam 	t010	coITY01 	Feder Balzare	52		ITALY		TECHNICAL	1
+addCoachToTeam 	t010	coITY02 	Claud Marchis	53		ITALY		TECHNICAL	6
+addCoachToTeam 	t010	coITY03 	Leona Bonuc		42		ITALY		FITNESS 	2
+addCoachToTeam 	t010	coITY04 	Andr Barza		41		ITALY		FITNESS 	1
+
+
+//= ===============================================================================
+
+addTeam	 t011	team11	IRELAND			47010
+addCoachToTeam 	t010	coIRL01 	Feder Balzare	52		IRELAND		TECHNICAL	2
+addPlayer	pIRL01		Frico Baetti		36		IRELAND		04	WR RT	354
+addPlayerToTeam		pIRL01	04 	t011
+//= ===============================================================================
+
+addTeam	 t014	team14	SWEDEN			25000
+addCoachToTeam 	t014	coSWE01 	Lobez Bare	42		SWEDEN		FITNESS		4
+addPlayer	pSWE01		Tim Gem		36		SWEDEN		03	WR RT	2440
+addPlayerToTeam		pSWE01	03 	t011
+//= ===============================================================================
+
+addTeam	 t016	team16	ENGLAND			6300
+//= ===============================================================================
+
+
+// failed already added
+addTeam	 t001	team1	POLAND			25000
+
+//= ===============================================================================
+
+// addMatch matchID, date, stadium
+
+addMatch	m001	8/6/2012	NationalStadium		55010
+addMatch	m002	8/6/2012	MunicipalStadium	35000
+addMatch	m003	9/6/2012	MetalistStadium		36050	
+addMatch	m004	9/6/2012	ArenaLviv			30090
+addMatch	m005	10/6/2012	ArenaLviv			30122
+addMatch	m006	10/6/2012	PGE_Arena			34000
+addMatch	m007	11/6/2012	OlympicStadium		53040		
+addMatch	m008	11/6/2012	DonbassArena		41100		
+addMatch	m009	12/6/2012	NationalStadium		50070
+addMatch	m010	12/6/2012	MunicipalStadium	40000
+addMatch	m011	13/6/2012	MetalistStadium		35000
+addMatch	m012	13/6/2012	ArenaLviv			29808
+addMatch	m013	14/6/2012	PGE_Arena			38000
+addMatch	m014	14/6/2012	MunicipalRStadium	39550
+addMatch	m015	15/6/2012	OlympicStadium		60640
+addMatch	m016	15/6/2012	DonbassArena		46440
+addMatch	m017	16/6/2012	NationalStadium		51030
+addMatch	m018	16/6/2012	MunicipalStadium	39858
+addMatch	m019	17/6/2012	MetalistStadium		35651
+addMatch	m020	17/6/2012	ArenaLviv			31000
+addMatch	m021	18/6/2012	PGE_Arena			37650
+addMatch	m022	18/6/2012	MunicipalRStadium	37342
+addMatch	m023	19/6/2012	OlympicStadium		62214
+addMatch	m024	19/6/2012	DonbassArena		47320
+addMatch	m025	21/6/2012	NationalStadium		52322
+addMatch	m026	22/6/2012	PGE_Arena			37888
+addMatch	m027	23/6/2012	DonbassArena		43210
+addMatch	m028	24/6/2012	OlympicStadium		61421
+addMatch	m029	27/6/2012	DonbassArena		46200
+addMatch	m030	28/6/2012	NationalStadium		52000
+addMatch	m031	1/7/2012	OlympicStadium		63214
+// failed already added
+addMatch	m001	8/6/2012	NationalStadium		55010
+
+
+//= ===============================================================================
+// addSponsor String pId,String pFullName, String nation, short age, String surname
+addSponsor		sp01	 	Adolf Dassler	GERMANY			55			Adidas
+// failed already added
+addSponsor		sp01	 	Adolf Dassler	GERMANY			55			Adidas
+addSponsor		sp02		Goro Yoshida	JAPANESE		56			Canon
+addSponsor		sp03		 Asa Candler	GREECE			100			Coca_Cola
+addSponsor		sp04		 un known		GERMANY			66			Continental
+addSponsor		sp05		Carl Group 		DENMARK			99			Carlsberg
+
+
+//= ===============================================================================
+// fundTeamBySponser(pId, surname , 	tId,	 amount, fDate)
+fundTeamBySponser 	sp01	Adidas		t001	12550		14/5/2012
+// failed already funded
+fundTeamBySponser 	sp01	Adidas		t001	12550		14/5/2012
+// failed ,sposor does not exist
+fundTeamBySponser 	sp00	Continental	t002	25000		16/1/2012
+fundTeamBySponser 	sp05	Carlsberg	t006	30000		26/1/2012
+fundTeamBySponser	sp01	Adidas		t007	26000		30/3/2012
+fundTeamBySponser	sp01	Adidas		t005	26000		30/3/2012
+// failed , over allowed funded teams
+fundTeamBySponser	sp01	Adidas		t006	26000		30/3/2012
+fundTeamBySponser	sp05	Carlsberg	t006	26000		30/3/2012
+
+
+//= ===============================================================================
+// addMatchResult 	tIdA, tIdB 		mId		  date 	,totalTime, penaltyEnd
+	
+addMatchResult	  	t001	t002	m001	8/6/2012	90		false			
+addMatchResult		t003	t004	m002	9/6/2012	90		false			
+addMatchResult		t003	t004	m002	8/6/2012	90		false			
+addMatchResult		t005	t006	m003	9/6/2012	90		false			
+addMatchResult		t007	t008	m004	9/6/2012	90		false			
+addMatchResult		t009	t010	m005	10/6/2012	90		false			
+addMatchResult		t011	t012	m006	10/6/2012	90		false			
+addMatchResult		t013	t014	m007	11/6/2012	90		false			
+addMatchResult		t015	t016	m008	11/6/2012	90		false			
+addMatchResult		t001	t003	m009	12/6/2012	90		false			
+addMatchResult		t002	t004	m010	12/6/2012	90		false
+addMatchResult		t005	t007	m011	13/6/2012	90		false		
+addMatchResult		t006	t008	m012	13/6/2012	90		false			
+addMatchResult		t009	t011	m013	14/6/2012	90		false			
+addMatchResult		t010	t012	m014	14/6/2012	90		false			
+addMatchResult		t014	t016	m015	15/6/2012	90		false			
+addMatchResult		t013	t015	m016	15/6/2012	90		false
+addMatchResult		t002	t003	m017	16/6/2012	90		false	
+addMatchResult		t004	t001	m018	16/6/2012	90		false	
+addMatchResult		t008	t005	m019	17/6/2012	92		false
+addMatchResult		t006	t007	m020	17/6/2012	90		false
+addMatchResult		t012	t009	m021	18/6/2012	90		false
+addMatchResult		t010	t013	m022	18/6/2012	94		false
+addMatchResult		t014	t015	m023	19/6/2012	90		false
+addMatchResult		t016	t013	m024	19/6/2012	90		false
+addMatchResult		t004	t008	m025	21/6/2012	90		false
+addMatchResult		t007	t002	m026	22/6/2012	90		false
+addMatchResult		t009	t015	m027	23/6/2012	91		false
+addMatchResult		t007	t002	m028	24/6/2012	120		true
+addMatchResult		t008	t009	m029	27/6/2012	120		true
+addMatchResult		t007	t010	m030	28/6/2012	94		false
+addMatchResult		t009	t010	m031	1/7/2012	90		true		
+
+//= ===============================================================================
+// addGoalDetails( tIdA ,  tIdB , mId,  date, pId,  pNum, minute,  penalty)
+
+addGoalDetails  t002	t003	m017	16/6/2012		pGR07		11 		88 		false
+addGoalDetails	t010	t012	m014	14/6/2012 		pHR07		10 		60		true
+// this one will fail
+addGoalDetails	t010	t012	m014	14/6/2012 		pPO01		01 		60		true
+
+
+//= ===============================================================================
+// addPenaltyCardDetails( tIdA ,  tIdB , mId,  date,  pId,  pNum, minute,  color)
+
+addPenaltyCardDetails  	t002	t003	m017	16/6/2012		pGR07		11 		40 		YELLOW
+addPenaltyCardDetails	t010	t012	m014	14/6/2012 		pHR07		10 		80		RED
+// this one will fail
+addPenaltyCardDetails	t010	t012	m014	14/6/2012 		pPO01		01 		60		RED
+
+
+//= ===============================================================================
+// getAllCoachesThatWorksOnTwoRules
+
+getAllCoachesThatWorksOnTwoRules
+
+
+
+
+//= ===============================================================================
+// discardRedCardsForPlayersOfTeam
+
+discardRedCardsForPlayersOfTeam t004
+discardRedCardsForPlayersOfTeam t003
+
+
+
+
+//= ===============================================================================
+// removeMatchResult( tIdA ,  tIdB , mId, date)
+
+removeMatchResult		t013	t015	m016	15/6/2012
+removeMatchResult		t002	t003	m017	16/6/2012
+
+
+//= ===============================================================================
+// removePlayerFromTeam( pId,  pNum, tId)
+
+removePlayerFromTeam		pHR04		03		t012
+removePlayerFromTeam		pHR05		04		t012
+
+
+//= ===============================================================================
+// removeCoachFromTeam( tId, pId)
+
+removeCoachFromTeam 	t010	coITY01
+removeCoachFromTeam 	t007	coGY01
+// fail
+removeCoachFromTeam 	t002	coDE01
+
+
+//= ===============================================================================
+
+

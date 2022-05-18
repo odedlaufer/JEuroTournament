@@ -1,0 +1,22 @@
+package utils;
+
+public enum Country {
+	
+	POLAND,
+	UKRAINE,
+	GERMANY,
+	RUSSIA ,
+	ITALY ,
+	FRANCE ,
+	NETHERLANDS,
+	GREECE ,
+	ENGLAND,
+	DENMARK,
+	SPAIN ,
+	SWEDEN ,
+	CROATIA,
+	CZECHREPUBLIC,
+	PORTUGAL,
+	IRELAND,
+	UNKNOWN
+}
