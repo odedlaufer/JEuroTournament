@@ -692,7 +692,7 @@ public class JEuroTournament {
 	 */
 	public boolean removeMatchResult(String tIdA , String tIdB ,String mId,Date date){
 		
-		if(tIdA != null && tIdA != null && mId != null && date != null) { 
+		if(tIdA != null && tIdB != null && mId != null && date != null) { 
 			
 			Team teamA = new Team(tIdA);
 			Team teamB = new Team(tIdB);
